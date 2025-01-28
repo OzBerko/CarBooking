@@ -8,7 +8,7 @@ import java.time.ZonedDateTime;
 import java.util.*;
 
 public class BookingArrayDataAccessService implements BookingDao {
-    private final static File file = new File("src/com/osborn/booking/bookings.csv");
+    private final static File file = new File("src/main/resources/bookings.csv");
 
     private final static Map<Integer, Bookings> bookings = new HashMap<>();
     private static int bookingIndex = 0;

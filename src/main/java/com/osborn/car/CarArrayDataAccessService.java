@@ -5,7 +5,7 @@ import java.util.*;
 
 public class CarArrayDataAccessService implements CarDao {
 
-    private final static File file = new File("src/com/osborn/car/cars.csv");
+    private final static File file = new File("src/main/resources/cars.csv");
 
     private final static Map<Integer, Car> cars = new HashMap<>();
     private static int carsIndex = 0;

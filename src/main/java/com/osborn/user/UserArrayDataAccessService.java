@@ -4,8 +4,11 @@ import java.io.*;
 import java.util.*;
 
 public class UserArrayDataAccessService implements UserDao {
-    private final static File tmpFile = new File("src/com/osborn/user/users.tmp");
-    private final static File file = new File("src/com/osborn/user/users.csv");
+//    private final static File file = new File("src/main/resources/users.csv");
+    private final static File file = new File(Objects.requireNonNull(UserArrayDataAccessService.class.getClassLoader()
+                                                                                                     .getResource(
+                                                                                                             "users.csv"))
+                                                     .getPath());
 
     private final static Map<Integer, User> users = new HashMap<>();
 

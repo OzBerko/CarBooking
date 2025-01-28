@@ -33,7 +33,6 @@ public class Main {
         }
     }
 
-
     public static void main(String[] args) {
         UserDao userDbService = new UserArrayDataAccessService();
         UserService userService = new UserService(userDbService);
