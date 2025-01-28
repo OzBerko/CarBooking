@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Optional;
 
 public interface BookingDao {
-    public List<Bookings> getBookings();
+    List<Bookings> getBookings();
 
-    public Integer addBookings(Bookings booking);
+    Integer addBookings(Bookings booking);
 
-    public void saveBookings();
+    void saveBookings();
 
     Optional<Bookings> deleteBooking(Integer bookingKey);
 }

@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UserDao {
-    public List<User> getUsers();
+    List<User> getUsers();
 
-    public Integer addUser(User user);
+    Integer addUser(User user);
 
-    public void saveUsers();
+    void saveUsers();
 
-    public Optional<User> deleteUser(Integer userKey);
+    Optional<User> deleteUser(Integer userKey);
 }

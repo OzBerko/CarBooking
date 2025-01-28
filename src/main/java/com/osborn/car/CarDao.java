@@ -6,8 +6,8 @@ import java.util.UUID;
 
 public interface CarDao {
 
-    public Optional<Car> getCar(UUID carId);
-    public List<Car> getCars();
-    public Integer addCar(Car car);
-    public void saveCars();
+    Optional<Car> getCar(UUID carId);
+    List<Car> getCars();
+    Integer addCar(Car car);
+    void saveCars();
 }
